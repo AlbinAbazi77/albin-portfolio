@@ -310,4 +310,28 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: auto;
   }
+  /* Mobile landscape */
+@media (max-width: 720px) and (orientation: landscape) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero-text {
+    order: 0;
+  }
+
+  .portrait {
+    order: 0;
+    width: 100%;
+    top: 0;
+    align-self: center;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
+  }
 }
