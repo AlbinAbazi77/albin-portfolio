@@ -276,9 +276,14 @@ img { max-width: 100%; display: block; }
   .nav-links .nav-cta { margin: 0.5rem 0 0; text-align: center; }
 }
 /* Mobile: text left, photo right */
-
-/* Mobile: text left, photo right */
-@media (max-width: 720px) {
+.portrait {
+  order: 0;
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+  top: -55px;
+  align-self: start;
+}
   .hero-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -304,4 +309,4 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: auto;
   }
-}
+
