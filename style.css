@@ -309,11 +309,12 @@ img { max-width: 100%; display: block; }
   .portrait img {
     width: 100%;
     height: auto;
-  }
+}
   
 }
+
   /* Mobile landscape */
-@media (max-width: 720px) and (orientation: landscape) {
+@media (max-width: 960px) and (orientation: landscape) {
   .hero-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
