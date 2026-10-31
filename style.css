@@ -296,6 +296,7 @@ img { max-width: 100%; display: block; }
     order: 0;
     width: 100%;
     margin-top: 0;
+     transform: translateY(-25px);
   }
 
   .portrait img {
