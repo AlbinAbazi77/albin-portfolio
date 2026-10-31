@@ -310,6 +310,8 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: auto;
   }
+  
+}
   /* Mobile landscape */
 @media (max-width: 720px) and (orientation: landscape) {
   .hero-grid {
