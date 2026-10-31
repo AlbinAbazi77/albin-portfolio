@@ -127,7 +127,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   margin: 0;
   justify-self: center;
-  width: 320px;
+  width: 300px;
   max-width: 100%;
 }
 .portrait img {
