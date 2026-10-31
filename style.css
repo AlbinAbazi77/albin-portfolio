@@ -123,7 +123,13 @@ img { max-width: 100%; display: block; }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Portrait: photo is shown exactly as uploaded; only the frame is styled with CSS */
-.portrait { position: relative; margin: 0; justify-self: center; width: min(100%, 400px); }
+.portrait {
+  position: relative;
+  margin: 0;
+  justify-self: center;
+  width: 320px;
+  max-width: 100%;
+}
 .portrait img {
   position: relative; z-index: 1;
   width: 100%; aspect-ratio: 4 / 5;
@@ -276,19 +282,13 @@ img { max-width: 100%; display: block; }
   .nav-links .nav-cta { margin: 0.5rem 0 0; text-align: center; }
 }
 /* Mobile: text left, photo right */
-.portrait {
-  order: 0;
-  width: 100%;
-  margin-top: 0;
-  position: relative;
-  top: -55px;
-  align-self: start;
-}
+/* Mobile: text left, photo right */
+@media (max-width: 720px) {
   .hero-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 12px;
-    align-items: center;
+    align-items: start;
   }
 
   .hero-text {
@@ -301,12 +301,13 @@ img { max-width: 100%; display: block; }
     order: 0;
     width: 100%;
     margin-top: 0;
-  position: relative;
-  top: -55px;
+    position: relative;
+    top: 0px;
+    align-self: start;
   }
 
   .portrait img {
     width: 100%;
     height: auto;
   }
-
+}
