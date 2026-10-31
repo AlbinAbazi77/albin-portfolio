@@ -275,22 +275,31 @@ img { max-width: 100%; display: block; }
   .nav-links a { display: block; padding: 0.8rem 1rem; }
   .nav-links .nav-cta { margin: 0.5rem 0 0; text-align: center; }
 }
-/* Mobile: text first, photo below */
+/* Mobile: text left, photo right */
+
+/* Mobile: text left, photo right */
 @media (max-width: 720px) {
   .hero-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 12px;
     align-items: center;
   }
 
   .hero-text {
-    order: 1;
+    order: 0;
     width: 100%;
+    min-width: 0;
   }
 
   .portrait {
-    order: 2;
-    width: min(100%, 320px);
-    margin-top: 2rem;
+    order: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
   }
 }
