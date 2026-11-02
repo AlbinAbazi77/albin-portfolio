@@ -84,3 +84,23 @@ document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
 /* ---------- 6. CURRENT YEAR IN THE FOOTER ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+
+document.addEventListener("keydown", function(e) {
+    if (
+        e.ctrlKey &&
+        ["u", "s", "c"].includes(e.key.toLowerCase())
+    ) {
+        e.preventDefault();
+    }
+
+    if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey &&
+        ["i", "j"].includes(e.key.toLowerCase()))
+    ) {
+        e.preventDefault();
+    }
+});
